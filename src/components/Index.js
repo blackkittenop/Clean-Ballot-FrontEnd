@@ -1,24 +1,10 @@
-// import "./App.css";
+import HomePage from "./HomePage";
+import Navbar from "./Navbar";
+import ViewResult from "./ViewResult";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Winner from "./Winner";
 
-import { ToastContainer } from "react-toastify";
-//import "react-toastify/dist/ReactToastify.css"; // Import the CSS
-// Admin Page Imports
-import AdminLogin from "./pages/AdminLogin";
-import AdminPage from "./pages/AdminPage";
-import CandidatePage from "./pages/CandidatePage";
-import AddCandidateForm from "./features/AddCandidateForm";
-import VoterPage from "./pages/VoterPage";
-import AddVoterForm from "./features/AddVoterForm";
-// Main Page Imports
-import HomePage from "./components/HomePage";
-import Navbar from "./components/Navbar";
-import ViewResult from "./components/ViewResult";
-import Winner from "./components/Winner";
-import AdminRegister from "./pages/AdminRegister";
-
-function App() {
-  // data array
+function Index() {
   const votingcandidates = [
     {
       id: 1,
@@ -77,7 +63,6 @@ function App() {
             path="/"
             element={<HomePage votingCandidate={votingcandidates} />}
           />
-
           <Route
             path="/viewResult"
             element={<ViewResult votingCandidate={votingcandidates} />}
@@ -93,17 +78,10 @@ function App() {
               />
             }
           />
-          <Route path="/login" element={<AdminLogin />} />
-          <Route path="/register" element={<AdminRegister />} />
-          <Route path="/admin" element={<AdminPage />} />
-          <Route path="/candidate" element={<CandidatePage />} />
-          <Route path="/addCandidate" element={<AddCandidateForm />} />
-          <Route path="/voter" element={<VoterPage />} />
-          <Route path="/addVoter" element={<AddVoterForm />} />
         </Routes>
       </Router>
     </>
   );
 }
 
-export default App;
+export default Index;
