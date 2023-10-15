@@ -25,7 +25,7 @@ export default function Votingcard(props) {
                     <h3 className="card-title">{votingcandidate.name}</h3>
                     <span>
                       <h6 className="votingCard">
-                        Runnung to Be: Prime Minister
+                        Running to Be: Prime Minister
                       </h6>
                     </span>
                     <p className="card-text">
@@ -44,9 +44,7 @@ export default function Votingcard(props) {
                       Data={votingcandidate.Manifesto}
                       trigger={buttonPopup}
                       setTrigger={setButtonPopup}
-                    >
-                      {console.log("")}
-                    </Manifesto>
+                    ></Manifesto>
                     <button className="btn btn-danger mx-2">Vote</button>
                   </div>
                 </div>

@@ -4,7 +4,7 @@ export default function Info() {
   return (
     <>
       <div
-        className="container d-flex justify-content-center my-20"
+        className=" d-flex justify-content-center my-20"
         style={{ margin: "20px", padding: "30px" }}
       >
         <div className="row section-title">
